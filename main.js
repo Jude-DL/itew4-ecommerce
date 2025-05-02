@@ -1,73 +1,82 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const slides = document.querySelector('.slides');
-    const dots = document.querySelectorAll('.slider-dot');
-    const prevBtn = document.querySelector('.prev');
-    const nextBtn = document.querySelector('.next');
-    let currentSlide = 0;
-    const slideCount = document.querySelectorAll('.slide').length;
-    let autoSlideInterval;
+const slides = document.querySelector('.slides');
+const dots = document.querySelectorAll('.slider-dot');
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+let currentSlide = 0;
+const slideCount = document.querySelectorAll('.slide').length;
+let autoSlideInterval;
 
-    // Function to update slide position
-    function updateSlidePosition() {
-        slides.style.transform = `translateX(-${currentSlide * 100}%)`;
-        
-        // Update active dot
-        dots.forEach((dot, index) => {
-            dot.classList.toggle('active', index === currentSlide);
-        });
-    }
-
-    // Function to go to next slide
-    function nextSlide() {
-        currentSlide = (currentSlide + 1) % slideCount;
-        updateSlidePosition();
-    }
-
-    // Function to go to previous slide
-    function prevSlide() {
-        currentSlide = (currentSlide - 1 + slideCount) % slideCount;
-        updateSlidePosition();
-    }
-
-    // Set up click events for dots
+function updateSlidePosition() {
+    slides.style.transform = `translateX(-${currentSlide * 100}%)`;
     dots.forEach((dot, index) => {
-        dot.addEventListener('click', () => {
-            currentSlide = index;
-            updateSlidePosition();
-            resetAutoSlide();
-        });
+        dot.classList.toggle('active', index === currentSlide);
     });
+}
 
-    // Set up click events for arrows
-    prevBtn.addEventListener('click', () => {
-        prevSlide();
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % slideCount;
+    updateSlidePosition();
+}
+
+function prevSlide() {
+    currentSlide = (currentSlide - 1 + slideCount) % slideCount;
+    updateSlidePosition();
+}
+
+dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+        currentSlide = index;
+        updateSlidePosition();
         resetAutoSlide();
     });
+});
 
-    nextBtn.addEventListener('click', () => {
-        nextSlide();
-        resetAutoSlide();
-    });
+prevBtn?.addEventListener('click', () => {
+    prevSlide();
+    resetAutoSlide();
+});
 
-    // Auto slide functionality
-    function startAutoSlide() {
-        autoSlideInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
-    }
+nextBtn?.addEventListener('click', () => {
+    nextSlide();
+    resetAutoSlide();
+});
 
-    function resetAutoSlide() {
-        clearInterval(autoSlideInterval);
-        startAutoSlide();
-    }
+function startAutoSlide() {
+    autoSlideInterval = setInterval(nextSlide, 5000);
+}
 
-    // Start auto sliding
+function resetAutoSlide() {
+    clearInterval(autoSlideInterval);
     startAutoSlide();
+}
+
+startAutoSlide();
 });
 
 document.addEventListener("DOMContentLoaded", () => {
     const menuToggle = document.querySelector(".mobile-menu-toggle");
     const mobileMenu = document.querySelector(".mobile-menu");
+    menuToggle?.addEventListener("click", () => {
+        mobileMenu?.classList.toggle("active");
+    });
+});
 
-    menuToggle.addEventListener("click", () => {
-        mobileMenu.classList.toggle("active");
+document.addEventListener("DOMContentLoaded", () => {
+    const searchForm = document.getElementById("search-form");
+    const searchInput = document.getElementById("product-search");
+    const productsGrid = document.getElementById("products-grid");
+    const productItems = productsGrid.querySelectorAll(".product-item");
+
+    searchForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+});
+
+searchInput.addEventListener("input", () => {
+        const searchValue = searchInput.value.toLowerCase();
+        productItems.forEach((item) => {
+            const productName = item.getAttribute("data-name")?.toLowerCase() || "";
+            item.style.display = productName.includes(searchValue) ? "block" : "none";
+        });
     });
 });
