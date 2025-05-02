@@ -62,3 +62,12 @@ document.addEventListener('DOMContentLoaded', function () {
     // Start auto sliding
     startAutoSlide();
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.querySelector(".mobile-menu-toggle");
+    const mobileMenu = document.querySelector(".mobile-menu");
+
+    menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("active");
+    });
+});
