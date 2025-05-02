@@ -1,0 +1,252 @@
+<!-- product.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UltraPhone Pro 13 - TechGadgetHub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../css/product-page.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <a href="../index.html">
+                        <h1>TechGadgetHub</h1>
+                    </a>
+                </div>
+                <div class="search-bar">
+                    <form action="../search.html" method="get">
+                        <input type="text" placeholder="Search for gadgets..." name="query">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="header-actions">
+                    <div class="account">
+                        <a href="../account/login.html"><i class="fas fa-user"></i> Account</a>
+                    </div>
+                    <div class="cart">
+                        <a href="../cart.html"><i class="fas fa-shopping-cart"></i> Cart (0)</a>
+                    </div>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="../categories.html">Categories <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="../categories/smartphones.html">Smartphones</a>
+                        <a href="../categories/laptops.html">Laptops & Computers</a>
+                        <a href="../categories/audio.html">Audio Devices</a>
+                        <a href="../categories/smart-home.html">Smart Home</a>
+                        <a href="../categories/wearables.html">Wearables</a>
+                        <a href="../categories/photography.html">Photography</a>
+                    </div>
+                </li>
+                <li><a href="../deals.html">Deals</a></li>
+                <li><a href="../new-arrivals.html">New Arrivals</a></li>
+                <li><a href="../blog.html">Tech Blog</a></li>
+                <li><a href="../about.html">About Us</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../categories/smartphones.html">Smartphones</a></li>
+                <li>UltraPhone Pro 13</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Product Details Section -->
+    <section class="product-details">
+        <div class="container">
+            <div class="product-details-wrapper">
+                <!-- Product Gallery -->
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img src="../images/products/ultraphone-pro-13-main.jpg" alt="UltraPhone Pro 13" id="mainImage">
+                        <div class="product-badge new">New</div>
+                    </div>
+                    <div class="gallery-thumbnails">
+                        <img src="../images/products/ultraphone-pro-13-main.jpg" alt="UltraPhone Pro 13 - Front" class="active" onclick="changeImage(this)">
+                        <img src="../images/products/ultraphone-pro-13-back.jpg" alt="UltraPhone Pro 13 - Back" onclick="changeImage(this)">
+                        <img src="../images/products/ultraphone-pro-13-side.jpg" alt="UltraPhone Pro 13 - Side" onclick="changeImage(this)">
+                        <img src="../images/products/ultraphone-pro-13-camera.jpg" alt="UltraPhone Pro 13 - Camera" onclick="changeImage(this)">
+                    </div>
+                </div>
+
+                <!-- Product Information -->
+                <div class="product-info">
+                    <h1 class="product-title">UltraPhone Pro 13</h1>
+                    <div class="product-meta">
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="rating-value">4.5</span>
+                            <span class="review-count">(128 Reviews)</span>
+                        </div>
+                        <div class="product-sku">
+                            <span>SKU: UPP13-128GB-BLK</span>
+                        </div>
+                        <div class="product-availability in-stock">
+                            <i class="fas fa-check-circle"></i> In Stock
+                        </div>
+                    </div>
+
+                    <div class="product-price">
+                        <span class="current-price">$899.99</span>
+                        <span class="old-price">$999.99</span>
+                        <span class="discount-badge">10% OFF</span>
+                    </div>
+
+                    <div class="product-short-description">
+                        <p>The all-new UltraPhone Pro 13 features a stunning 6.7-inch Super Retina XDR display, powerful A16 processor, and an advanced triple-camera system with enhanced low-light performance. Experience all-day battery life and the latest connectivity options.</p>
+                    </div>
+
+                    <!-- Product Variants -->
+                    <div class="product-variants">
+                        <div class="variant-group">
+                            <h3>Storage</h3>
+                            <div class="variant-options">
+                                <label class="variant-option">
+                                    <input type="radio" name="storage" value="128gb" checked>
+                                    <span>128GB</span>
+                                </label>
+                                <label class="variant-option">
+                                    <input type="radio" name="storage" value="256gb">
+                                    <span>256GB (+$100)</span>
+                                </label>
+                                <label class="variant-option">
+                                    <input type="radio" name="storage" value="512gb">
+                                    <span>512GB (+$200)</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="variant-group">
+                            <h3>Color</h3>
+                            <div class="color-options">
+                                <label class="color-option">
+                                    <input type="radio" name="color" value="black" checked>
+                                    <span class="color-circle" style="background-color: #252525;" title="Midnight Black"></span>
+                                </label>
+                                <label class="color-option">
+                                    <input type="radio" name="color" value="silver">
+                                    <span class="color-circle" style="background-color: #e0e0e0;" title="Silver"></span>
+                                </label>
+                                <label class="color-option">
+                                    <input type="radio" name="color" value="blue">
+                                    <span class="color-circle" style="background-color: #1a73e8;" title="Ocean Blue"></span>
+                                </label>
+                                <label class="color-option">
+                                    <input type="radio" name="color" value="gold">
+                                    <span class="color-circle" style="background-color: #d4af37;" title="Gold"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add to Cart Section -->
+                    <div class="add-to-cart-section">
+                        <div class="quantity-selector">
+                            <button class="quantity-btn minus" onclick="decrementQuantity()">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <input type="number" id="quantity" value="1" min="1" max="10">
+                            <button class="quantity-btn plus" onclick="incrementQuantity()">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <button class="btn btn-primary add-to-cart-btn">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                        <button class="btn-icon wishlist-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+
+                    <!-- Shipping & Returns -->
+                    <div class="product-extras">
+                        <div class="shipping-info">
+                            <i class="fas fa-truck"></i>
+                            <span>Free shipping on orders over $50</span>
+                        </div>
+                        <div class="return-info">
+                            <i class="fas fa-undo"></i>
+                            <span>30-day easy returns</span>
+                        </div>
+                        <div class="warranty-info">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>1-year manufacturer warranty</span>
+                        </div>
+                    </div>
+
+                    <!-- Social Share -->
+                    <div class="social-share">
+                        <span>Share:</span>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Tabs Section -->
+    <section class="product-tabs">
+        <div class="container">
+            <div class="tabs-container">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="description">Description</button>
+                    <button class="tab-btn" data-tab="specifications">Specifications</button>
+                    <button class="tab-btn" data-tab="reviews">Reviews (128)</button>
+                    <button class="tab-btn" data-tab="shipping">Shipping & Returns</button>
+                </div>
+                <div class="tabs-content">
+                    <!-- Description Tab -->
+                    <div class="tab-panel active" id="description">
+                        <h3>Product Description</h3>
+                        <p>Experience the next level of mobile technology with the UltraPhone Pro 13. Designed with cutting-edge features and premium materials, the UltraPhone Pro 13 delivers exceptional performance and incredible photography capabilities.</p>
+                        
+                        <div class="feature-highlight">
+                            <div class="feature">
+                                <i class="fas fa-mobile-alt"></i>
+                                <h4>Stunning Display</h4>
+                                <p>The 6.7-inch Super Retina XDR display offers true-to-life colors and incredible brightness, even in direct sunlight. With ProMotion technology, enjoy smooth scrolling and responsive touch experience.</p>
+                            </div>
+                            
+                            <div class="feature">
+                                <i class="fas fa-microchip"></i>
+                                <h4>Powerful Performance</h4>
+                                <p>Equipped with the latest A16 Pro chip, the UltraPhone Pro 13 delivers blazing-fast performance for gaming, video editing, and multitasking. Experience up to 20% better energy efficiency compared to previous models.</p>
+                            </div>
+                            
+                            <div class="feature">
+                                <i class="fas fa-camera"></i>
+                                <h4>Professional Camera System</h4>
+                                <p>
