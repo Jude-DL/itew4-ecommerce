@@ -1153,20 +1153,27 @@ footer {
 /* ---------- LOGIN FORM ---------- */
 .login-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f4f4f4;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    min-height: 93vh; 
+    background-color: #f4f4f4; 
     padding: 20px;
 }
 
+/* Center the branding section */
+.branding {
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
 .login-wrapper {
+    width: 100%;
+    max-width: 400px; 
     background: #fff;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
     text-align: center;
 }
 
@@ -1394,5 +1401,41 @@ footer {
 
 .register-form .form-links a:hover {
     text-decoration: underline;
+}
+
+/* Branding Section Styles */
+.branding {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    margin-bottom: 20px; /* Add spacing below branding */
+}
+
+.branding h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #333;
+}
+
+.branding p {
+    margin: 5px 0 0;
+    color: #777;
+}
+
+.login-wrapper {
+    max-width: 400px;
+    width: 100%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.login-wrapper h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
 }
 
