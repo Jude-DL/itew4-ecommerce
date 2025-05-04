@@ -358,6 +358,27 @@ search-bar button:hover {
     position: relative;
 }
 
+/* Hide dropdown content by default */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Show dropdown when the 'show' class is added */
+.dropdown-content.show {
+    display: block;
+}
+
+/* Ensure dropdown works on larger screens with hover */
+@media (min-width: 768px) {
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+}
+
 .dropdown-content {
     position: absolute;
     top: 100%;
@@ -652,7 +673,7 @@ search-bar button:hover {
     font-size: var(--font-size-lg);
     font-weight: 600;
     margin-bottom: var(--spacing-sm);
-    color: var(--secondary-color);
+    color: var (--secondary-color);
 }
 
 .product-rating {
@@ -740,7 +761,7 @@ search-bar button:hover {
     border-radius: var(--border-radius-md);
     overflow: hidden;
     box-shadow: var(--shadow-sm);
-    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+    transition: transform var(--transition-normal), box-shadow var (--transition-normal);
 }
 
 .blog-card:hover {
@@ -1153,6 +1174,31 @@ footer {
 
 /* Show menu when active */
 .mobile-menu.active {
+    display: block;
+}
+
+/* Mobile Dropdown Styles */
+.mobile-menu .dropdown-content {
+    display: none;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position: relative;
+}
+
+.mobile-menu .dropdown-content a {
+    display: block;
+    padding: 8px 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.mobile-menu .dropdown-content a:hover {
+    background-color: #f0f0f0;
+}
+
+.mobile-menu .dropdown-content.show {
     display: block;
 }
 
