@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products - TechGadgetHub</title>
-    <link rel="stylesheet" href="../styles.css">
+    <title>Deals - TechGadgetHub</title>
+    <link rel="stylesheet" href="styles.css">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -14,22 +14,22 @@
         <div class="container">
             <div class="header-wrapper">
                 <div class="logo">
-                    <a href="../index.html">
+                    <a href="index.html">
                         <h1>TechGadgetHub</h1>
                     </a>
                 </div>
                 <div class="search-bar">
-                    <form id="search-form" action="javascript:void(0);" method="get">
-                        <input type="text" id="product-search" placeholder="Search for products..." name="query">
+                    <form action="products.html">
+                        <input type="text" placeholder="Search for deals..." name="query">
                         <button type="submit"><i class="fas fa-search"></i></button>
                     </form>
                 </div>
                 <div class="header-actions">
                     <div class="account">
-                        <a href="../account/login.html"><i class="fas fa-user"></i> Account</a>
+                        <a href="account/login.html"><i class="fas fa-user"></i> Account</a>
                     </div>
                     <div class="cart">
-                        <a href="../cart.html"><i class="fas fa-shopping-cart"></i> Cart (0)</a>
+                        <a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart (0)</a>
                     </div>
                 </div>
                 <div class="mobile-menu-toggle">
@@ -43,99 +43,78 @@
     <nav class="main-nav">
         <div class="container">
             <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li class="dropdown">
-                    <a href="../categories.html">Categories <i class="fas fa-chevron-down"></i></a>
+                    <a>Categories <i class="fas fa-chevron-down"></i></a>
                     <div class="dropdown-content">
-                        <a href="../categories/smartphones.html">Smartphones</a>
-                        <a href="../categories/laptops.html">Laptops & Computers</a>
-                        <a href="../categories/audio.html">Audio Devices</a>
-                        <a href="../categories/smart-home.html">Smart Home</a>
-                        <a href="../categories/wearables.html">Wearables</a>
-                        <a href="../categories/photography.html">Photography</a>
+                        <a href="categories/smartphones.html">Smartphones</a>
+                        <a href="categories/laptops.html">Laptops & Computers</a>
+                        <a href="categories/audio.html">Audio Devices</a>
+                        <a href="categories/smart-home.html">Smart Home</a>
+                        <a href="categories/wearables.html">Wearables</a>
+                        <a href="categories/photography.html">Photography</a>
                     </div>
                 </li>
-                <li><a href="../deals.html">Deals</a></li>
-                <li><a href="../new-arrivals.html">New Arrivals</a></li>
-                <li><a href="../blog.html">Tech Blog</a></li>
-                <li><a href="../about.html">About Us</a></li>
-                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="deals.html" class="active">Deals</a></li>
+                <li><a href="new-arrivals.html">New Arrivals</a></li>
+                <li><a href="blog.html">Tech Blog</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Products Section -->
+    <!-- Deals Section -->
     <main>
         <div class="container product-container">
-            <h2>Our Products</h2>
+            <h2>Exclusive Deals</h2>
+            <p>Don't miss out on these amazing discounts! Limited time offers on our best-selling products.</p>
             <div id="products-grid" class="products-grid">
-                <div class="product-item" data-name="Smartphone X">
-                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=300&q=80" alt="Smartphone X">
-                    <h3>Smartphone X</h3>
-                    <p>$699.99</p>
-                    <a href="product-details.html" class="btn">View Details</a>
-                </div>
-                <div class="product-item" data-name="Laptop Pro">
-                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=300&q=80" alt="Laptop Pro">
-                    <h3>Laptop Pro</h3>
-                    <p>$1,299.99</p>
-                    <a href="product-details.html" class="btn">View Details</a>
-                </div>
-                <div class="product-item" data-name="Wireless Earbuds">
-                    <img src="https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?q=80&w=1978&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Wireless Earbuds">
-                    <h3>Wireless Earbuds</h3>
-                    <p>$199.99</p>
-                    <a href="product-details.html" class="btn">View Details</a>
-                </div>
-                <div class="product-item" data-name="Smart Home Hub">
-                    <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&fit=crop&w=300&q=80" alt="Smart Home Hub">
-                    <h3>Smart Home Hub</h3>
-                    <p>$249.99</p>
-                    <a href="product-details.html" class="btn">View Details</a>
-                </div>
-                <div class="product-item" data-name="4K Camera">
-                    <img src="https://images.unsplash.com/photo-1675011718475-f257cb602a28?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="4K Camera">
-                    <h3>4K Camera</h3>
-                    <p>$499.99</p>
-                    <a href="product-details.html" class="btn">View Details</a>
-                </div>
-                <div class="product-item" data-name="Gaming Headset">
-                    <img src="https://images.unsplash.com/photo-1629429407756-4a7703614972?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gaming Headset">
-                    <h3>Gaming Headset</h3>
-                    <p>$149.99</p>
-                    <a href="product-details.html" class="btn">View Details</a>
-                </div>
-
-                <!-- Featured Products -->
-                <div class="product-item" data-name="UltraPhone Pro 13">
-                    <img src="https://s.alicdn.com/@sc04/kf/H424c0ec9e82d43e3a777fd58c397453cC.jpg_720x720q50.jpg" alt="UltraPhone Pro 13">
-                    <h3>UltraPhone Pro 13</h3>
-                    <p>$899.99</p>
-                    <a href="products/ultraphone-pro-13.html" class="btn">View Details</a>
-                </div>
+                <!-- Deal 1 -->
                 <div class="product-item" data-name="MacBook Pro">
+                    <div class="product-badge sale">Sale</div>
                     <img src="https://images.gmanews.tv/webpics/2021/10/Apple_Macbook_Pro_2021_10_19_17_09_32.jpg" alt="MacBook Pro">
                     <h3>MacBook Pro</h3>
-                    <p>$1,299.99</p>
-                    <a href="products/nexusbook-pro-gaming.html" class="btn">View Details</a>
+                    <p><span class="current-price">$1,299.99</span> <span class="old-price">$1,499.99</span></p>
+                    <a href="products/macbook-pro.html" class="btn">View Details</a>
                 </div>
+                <!-- Deal 2 -->
                 <div class="product-item" data-name="SonicWave Pro Headphones">
+                    <div class="product-badge sale">Sale</div>
                     <img src="https://gutostore.com/cdn/shop/files/Sddcca517489f4e4c99a4d2408d4646177_394x.webp?v=1745329711" alt="SonicWave Pro Headphones">
                     <h3>SonicWave Pro Headphones</h3>
-                    <p>$199.99</p>
+                    <p><span class="current-price">$199.99</span> <span class="old-price">$249.99</span></p>
                     <a href="products/sonicwave-pro-headphones.html" class="btn">View Details</a>
                 </div>
+                <!-- Deal 3 -->
+                <div class="product-item" data-name="Smart Home Hub">
+                    <div class="product-badge sale">Sale</div>
+                    <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&fit=crop&w=300&q=80" alt="Smart Home Hub">
+                    <h3>Smart Home Hub</h3>
+                    <p><span class="current-price">$249.99</span> <span class="old-price">$299.99</span></p>
+                    <a href="products/smart-home-hub.html" class="btn">View Details</a>
+                </div>
+                <!-- Deal 4 -->
                 <div class="product-item" data-name="FitTech Smart Watch X2">
+                    <div class="product-badge sale">Sale</div>
                     <img src="https://image.made-in-china.com/2f0j00uDTfVsZgHBke/Fashion-X2-Plus-Smart-Watch-Waterproof-IP68-Heart-Rate-Monitor-Blood-Pressure-Pedometer-Sport-Smartwatch-X2-.jpg" alt="FitTech Smart Watch X2">
                     <h3>FitTech Smart Watch X2</h3>
-                    <p>$149.99</p>
+                    <p><span class="current-price">$149.99</span> <span class="old-price">$179.99</span></p>
                     <a href="products/fittech-smartwatch-x2.html" class="btn">View Details</a>
+                </div>
+                <!-- Deal 5 -->
+                <div class="product-item" data-name="UltraPhone Pro 13">
+                    <div class="product-badge sale">Sale</div>
+                    <img src="https://s.alicdn.com/@sc04/kf/H424c0ec9e82d43e3a777fd58c397453cC.jpg_720x720q50.jpg" alt="UltraPhone Pro 13">
+                    <h3>UltraPhone Pro 13</h3>
+                    <p><span class="current-price">$899.99</span> <span class="old-price">$999.99</span></p>
+                    <a href="products/ultraphone-pro-13.html" class="btn">View Details</a>
                 </div>
             </div>
         </div>
     </main>
 
-     <!-- Footer -->
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-grid">
@@ -222,6 +201,6 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
-
+    
 </body>
 </html>

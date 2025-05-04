@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audio Devices - TechGadgetHub</title>
-    <link rel="stylesheet" href="../../styles.css">
+    <title>New Arrivals - TechGadgetHub</title>
+    <link rel="stylesheet" href="styles.css">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -14,22 +14,22 @@
         <div class="container">
             <div class="header-wrapper">
                 <div class="logo">
-                    <a href="../../index.html">
+                    <a href="index.html">
                         <h1>TechGadgetHub</h1>
                     </a>
                 </div>
                 <div class="search-bar">
-                    <form id="search-form" action="javascript:void(0);" method="get">
-                        <input type="text" id="product-search" placeholder="Search for audio devices..." name="query">
+                    <form action="products.html">
+                        <input type="text" placeholder="Search for new arrivals..." name="query">
                         <button type="submit"><i class="fas fa-search"></i></button>
                     </form>
                 </div>
                 <div class="header-actions">
                     <div class="account">
-                        <a href="../../account/login.html"><i class="fas fa-user"></i> Account</a>
+                        <a href="account/login.html"><i class="fas fa-user"></i> Account</a>
                     </div>
                     <div class="cart">
-                        <a href="../../cart.html"><i class="fas fa-shopping-cart"></i> Cart (0)</a>
+                        <a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart (0)</a>
                     </div>
                 </div>
                 <div class="mobile-menu-toggle">
@@ -43,58 +43,56 @@
     <nav class="main-nav">
         <div class="container">
             <ul class="nav-links">
-                <li><a href="../../index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li class="dropdown">
                     <a>Categories <i class="fas fa-chevron-down"></i></a>
                     <div class="dropdown-content">
-                        <a href="smartphones.html">Smartphones</a>
-                        <a href="laptops.html">Laptops & Computers</a>
-                        <a href="audio.html">Audio Devices</a>
-                        <a href="smart-home.html">Smart Home</a>
-                        <a href="wearables.html">Wearables</a>
-                        <a href="photography.html">Photography</a>
+                        <a href="categories/smartphones.html">Smartphones</a>
+                        <a href="categories/laptops.html">Laptops & Computers</a>
+                        <a href="categories/audio.html">Audio Devices</a>
+                        <a href="categories/smart-home.html">Smart Home</a>
+                        <a href="categories/wearables.html">Wearables</a>
+                        <a href="categories/photography.html">Photography</a>
                     </div>
                 </li>
-                <li><a href="../../deals.html">Deals</a></li>
-                <li><a href="../../new-arrivals.html">New Arrivals</a></li>
-                <li><a href="../../blog.html">Tech Blog</a></li>
-                <li><a href="../../about.html">About Us</a></li>
-                <li><a href="../../contact.html">Contact</a></li>
+                <li><a href="deals.html">Deals</a></li>
+                <li><a href="new-arrivals.html" class="active">New Arrivals</a></li>
+                <li><a href="blog.html">Tech Blog</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Audio Devices Section -->
+    <!-- New Arrivals Section -->
     <main>
         <div class="container product-container">
-            <h2>Audio Devices</h2>
+            <h2>New Arrivals</h2>
+            <p>Check out the latest and greatest tech gadgets just added to our collection!</p>
             <div id="products-grid" class="products-grid">
-                <!-- Audio Device 1 -->
-                <div class="product-item" data-name="Wireless Earbuds">
-                    <img src="https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?q=80&w=1978&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Wireless Earbuds">
-                    <h3>Wireless Earbuds</h3>
-                    <p>$199.99</p>
-                    <a href="../wireless-earbuds.html" class="btn">View Details</a>
+                <!-- New Arrival 1 -->
+                <div class="product-item" data-name="UltraPhone Pro 13">
+                    <div class="product-badge new">New</div>
+                    <img src="https://s.alicdn.com/@sc04/kf/H424c0ec9e82d43e3a777fd58c397453cC.jpg_720x720q50.jpg" alt="UltraPhone Pro 13">
+                    <h3>UltraPhone Pro 13</h3>
+                    <p>$899.99</p>
+                    <a href="products/ultraphone-pro-13.html" class="btn">View Details</a>
                 </div>
-                <!-- Audio Device 2 -->
+                <!-- New Arrival 2 -->
+                <div class="product-item" data-name="Smart Glasses">
+                    <div class="product-badge new">New</div>
+                    <img src="https://plus.unsplash.com/premium_photo-1733892954342-8c7944436b89?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Smart Glasses">
+                    <h3>Smart Glasses</h3>
+                    <p>$249.99</p>
+                    <a href="products/smart-glasses.html" class="btn">View Details</a>
+                </div>
+                <!-- New Arrival 3 -->
                 <div class="product-item" data-name="Noise-Cancelling Headphones">
+                    <div class="product-badge new">New</div>
                     <img src="https://plus.unsplash.com/premium_photo-1661964426199-181e5ebbdba5?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Noise-Cancelling Headphones">
                     <h3>Noise-Cancelling Headphones</h3>
                     <p>$299.99</p>
-                    <a href="../noise-cancelling-headphones.html" class="btn">View Details</a>
-                </div>
-                <!-- Audio Device 3 -->
-                <div class="product-item" data-name="Bluetooth Speaker">
-                    <img src="https://images.unsplash.com/photo-1589256469067-ea99122bbdc4?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bluetooth Speaker">
-                    <h3>Bluetooth Speaker</h3>
-                    <p>$149.99</p>
-                    <a href="../bluetooth-speaker.html" class="btn">View Details</a>
-                </div>
-                <div class="product-item" data-name="Bluetooth Speaker">
-                    <img src="https://gutostore.com/cdn/shop/files/Sddcca517489f4e4c99a4d2408d4646177_394x.webp?v=1745329711" alt="Bluetooth Speaker">
-                    <h3>SonicWave Pro Headphones</h3>
-                    <p>$199.99</p>
-                    <a href="../sonicwave-pro-headphones.html" class="btn">View Details</a>
+                    <a href="products/noise-cancelling-headphones.html" class="btn">View Details</a>
                 </div>
             </div>
         </div>
@@ -119,34 +117,34 @@
                 <div class="footer-column">
                     <h3>Quick Links</h3>
                     <ul class="footer-links">
-                        <li><a href="../../index.html">Home</a></li>
-                        <li><a href="../../products.html">All Products</a></li>
-                        <li><a href="../../deals.html">Deals</a></li>
-                        <li><a href="../../new-arrivals.html">New Arrivals</a></li>
-                        <li><a href="../../about.html">About Us</a></li>
-                        <li><a href="../../contact.html">Contact</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">All Products</a></li>
+                        <li><a href="deals.html">Deals</a></li>
+                        <li><a href="new-arrivals.html">New Arrivals</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h3>Categories</h3>
                     <ul class="footer-links">
-                        <li><a href="smartphones.html">Smartphones</a></li>
-                        <li><a href="laptops.html">Laptops & Computers</a></li>
-                        <li><a href="audio.html">Audio Devices</a></li>
-                        <li><a href="smart-home.html">Smart Home</a></li>
-                        <li><a href="wearables.html">Wearables</a></li>
-                        <li><a href="photography.html">Photography</a></li>
+                        <li><a href="categories/smartphones.html">Smartphones</a></li>
+                        <li><a href="categories/laptops.html">Laptops & Computers</a></li>
+                        <li><a href="categories/audio.html">Audio Devices</a></li>
+                        <li><a href="categories/smart-home.html">Smart Home</a></li>
+                        <li><a href="categories/wearables.html">Wearables</a></li>
+                        <li><a href="categories/photography.html">Photography</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h3>Help & Info</h3>
                     <ul class="footer-links">
-                        <li><a href="../../shipping.html">Shipping Information</a></li>
-                        <li><a href="../../returns.html">Returns & Exchanges</a></li>
-                        <li><a href="../../faq.html">FAQ</a></li>
-                        <li><a href="../../privacy.html">Privacy Policy</a></li>
-                        <li><a href="../../terms.html">Terms & Conditions</a></li>
-                        <li><a href="../../sitemap.html">Site Map</a></li>
+                        <li><a href="shipping.html">Shipping Information</a></li>
+                        <li><a href="returns.html">Returns & Exchanges</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="sitemap.html">Site Map</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
@@ -173,7 +171,7 @@
     </a>
 
     <!-- JavaScript Files -->
-    <script src="../../main.js"></script>
+    <script src="main.js"></script>
 
     <!-- Mobile Menu -->
     <div class="mobile-menu">
