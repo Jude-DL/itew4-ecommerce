@@ -12,10 +12,10 @@ document.addEventListener("DOMContentLoaded", () => {
     dropdowns.forEach((dropdown) => {
         const dropdownContent = dropdown.querySelector(".dropdown-content");
         dropdown.addEventListener("click", (e) => {
-            // Prevent default only if the clicked element is the dropdown toggle
+            // Prevent default only for the toggle link
             if (e.target === dropdown.querySelector("a")) {
-                e.preventDefault(); // Prevent default link behavior for the toggle
-                dropdownContent?.classList.toggle("show"); // Toggle dropdown visibility
+                e.preventDefault();
+                dropdownContent?.classList.toggle("show");
             }
         });
     });

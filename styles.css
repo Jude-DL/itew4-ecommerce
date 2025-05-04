@@ -1084,6 +1084,11 @@ footer {
         flex-direction: column;
         text-align: center;
     }
+
+    .dropdown-content {
+        position: relative; /* Adjust position for smaller screens */
+        width: 100%; 
+    }
 }
 
 @media (max-width: 576px) {
