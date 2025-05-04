@@ -326,7 +326,6 @@ search-bar button:hover {
 /* ---------- NAVIGATION ---------- */
 .main-nav {
     background-color: var(--secondary-color);
-    margin-bottom: 50px;
 }
 
 .nav-links {
@@ -578,6 +577,7 @@ search-bar button:hover {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: var(--spacing-lg);
 }
+
 
 .product-card {
     background-color: white;
@@ -841,7 +841,6 @@ footer {
     background-color: var(--background-dark);
     color: var(--text-light);
     padding-top: var(--spacing-xl);
-    margin-top: 100px;
 }
 
 .footer-grid {
@@ -1466,8 +1465,9 @@ footer {
 
 /* Product Image */
 .product-item img {
-    max-width: 100%;
-    height: auto;
+    width: 100%; /* Ensures the image takes up the full width of its container */
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensures the image scales and crops to fit the container */
     border-radius: var(--border-radius-sm);
     margin-bottom: var(--spacing-md);
     transition: transform var(--transition-normal);
@@ -1506,4 +1506,10 @@ footer {
     background-color: var(--primary-dark);
     transform: translateY(-2px);
 }
+
+.product-container {
+    margin-top: 40px; 
+    margin-bottom: 40px; 
+}
+
 
